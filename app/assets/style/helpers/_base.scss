@@ -1,0 +1,15 @@
+*, *::before, ::after {
+    box-sizing: border-box;
+}
+
+// RWD 圖片
+img {
+    max-width: 100%; // 使圖片自適應父元素大小
+    height: auto;
+    vertical-align: middle; // 去除圖片下方2~3px空白    
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}

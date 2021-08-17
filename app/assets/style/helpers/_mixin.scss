@@ -1,0 +1,30 @@
+// 圖片取代文字技巧
+@mixin hide-text {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+};
+
+// Small devices
+@mixin small{
+    @media (min-width: 576px){
+        @content;
+    };
+};
+
+// Medium devices
+@mixin medium {
+    @media (min-width: 768px){
+        @content;
+    };
+};
+
+// Large
+@mixin large{
+    @media (min-width: 992px){
+        @content;
+    };
+};
+
+
+
