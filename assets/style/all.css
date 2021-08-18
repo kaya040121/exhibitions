@@ -14860,4 +14860,27 @@ a {
   font-weight: 500;
 }
 
+.live .live-bg {
+  background: url("../../assets/images/people2.png") center;
+  /*  圖片水平垂直置中  */
+  background-size: cover;
+  /*  背景自適應延伸屬性  */
+  height: 482px;
+}
+
+.live .btn {
+  width: 140px;
+}
+
+.live .live-bg-primary {
+  background-color: #190014CC;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .live .live-bg-primary {
+    width: 40%;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
