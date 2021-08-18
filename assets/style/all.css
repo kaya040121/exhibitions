@@ -19,6 +19,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
+  --bs-black: #000;
   --bs-primary: #630834;
   --bs-secondary: #E31277;
   --bs-success: #198754;
@@ -79,12 +80,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.325rem + 0.9vw);
 }
 
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -209,12 +210,12 @@ sup {
 }
 
 a {
-  color: #630834;
+  color: #707070;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #4f062a;
+  color: #5a5a5a;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -621,8 +622,8 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 0.9375rem);
+  padding-left: var(--bs-gutter-x, 0.9375rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -658,7 +659,7 @@ progress {
 }
 
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 1.875rem;
   --bs-gutter-y: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4416,12 +4417,12 @@ fieldset:disabled .btn {
 
 .btn-link {
   font-weight: 400;
-  color: #630834;
+  color: #707070;
   text-decoration: underline;
 }
 
 .btn-link:hover {
-  color: #4f062a;
+  color: #5a5a5a;
 }
 
 .btn-link:disabled, .btn-link.disabled {
@@ -4954,7 +4955,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #630834;
+  color: #707070;
   text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -4970,7 +4971,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: #4f062a;
+  color: #5a5a5a;
 }
 
 .nav-link.disabled {
@@ -5519,7 +5520,7 @@ fieldset:disabled .btn {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 
 .card > hr {
@@ -5534,14 +5535,14 @@ fieldset:disabled .btn {
 
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .card > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .card > .card-header + .list-group,
@@ -5585,7 +5586,7 @@ fieldset:disabled .btn {
 }
 
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: 0 0 0 0;
 }
 
 .card-footer {
@@ -5595,7 +5596,7 @@ fieldset:disabled .btn {
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 0 0 0 0;
 }
 
 .card-header-tabs {
@@ -5617,7 +5618,7 @@ fieldset:disabled .btn {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: 0;
 }
 
 .card-img,
@@ -5628,18 +5629,18 @@ fieldset:disabled .btn {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .card-group > .card {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9375rem;
 }
 
 @media (min-width: 576px) {
@@ -5872,7 +5873,7 @@ fieldset:disabled .btn {
 .page-link {
   position: relative;
   display: block;
-  color: #630834;
+  color: #707070;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -5893,14 +5894,14 @@ fieldset:disabled .btn {
 
 .page-link:hover {
   z-index: 2;
-  color: #4f062a;
+  color: #5a5a5a;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 
 .page-link:focus {
   z-index: 3;
-  color: #4f062a;
+  color: #5a5a5a;
   background-color: #e9ecef;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(99, 8, 52, 0.25);
@@ -6691,7 +6692,7 @@ fieldset:disabled .btn {
 }
 
 .toast-container > :not(:last-child) {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9375rem;
 }
 
 .toast-header {
@@ -9527,7 +9528,7 @@ fieldset:disabled .btn {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.325rem + 0.9vw) !important;
 }
 
 .fs-2 {
@@ -14669,7 +14670,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
   .fs-2 {
     font-size: 2rem !important;
@@ -14724,6 +14725,10 @@ fieldset:disabled .btn {
           box-sizing: border-box;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  line-height: 1.5;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -14735,7 +14740,7 @@ a {
   text-decoration: none;
 }
 
-.header .nav-list {
+.nav-list {
   right: 0;
 }
 
@@ -14801,6 +14806,58 @@ a {
 
 .footer .copyright {
   font-size: 1rem;
+}
+
+.header {
+  background: url("../../assets/images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash (1).jpg") center;
+  /*  圖片水平垂直置中  */
+  background-size: cover;
+  /*  背景自適應延伸屬性  */
+  height: 480px;
+}
+
+.header .btn {
+  display: block;
+  width: 45%;
+}
+
+@media (min-width: 768px) {
+  .header .btn {
+    width: 160px;
+  }
+}
+
+.header .header-content {
+  height: 480px;
+  padding-bottom: 90px;
+}
+
+@media (min-width: 768px) {
+  .header .header-content {
+    padding-bottom: 0px;
+  }
+}
+
+.header .nav-scroller {
+  height: 2.75rem;
+  /* 隱藏下方捲軸 */
+  overflow-y: hidden;
+  border-bottom: 1px solid #707070;
+}
+
+.header .nav-scroller .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /* 隱藏下方捲軸 */
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.special-exhibition .card {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=all.css.map */
