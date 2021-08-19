@@ -61,7 +61,7 @@
     </div>
   </div>
   <!-- nav-scroller -->
-  <div class="nav-scroller bg-white ">
+  <div class="nav-scroller bg-white">
     <nav class="container nav justify-content-md-center" aria-label="Secondary navigation">
       <a class="nav-link active py-3" aria-current="page" href="#">音樂</a>
       <a class="nav-link py-3" href="#">戲劇</a>
@@ -79,6 +79,7 @@
 <div class="main">
   <!-- 熱門特展 -->
   <section class="special-exhibition mt-13">
+    <!-- 不知為何會與 nav-scroller 區塊重疊，因此往上推 mt-13 -->
     <div class="container">
       <h2 class="fw-bold">熱門特展</h2>
     </div>
@@ -116,7 +117,7 @@
       <div class="card bg-light border-0 mb-3">
         <div class="row g-0">
           <div class="col-lg-4">
-            <img src="assets/images/images/michel-catalisano--a0D9LpcKV8-unsplash(1x1).jpg" class="img-fluid" alt="...">
+            <img src="assets/images/michel-catalisano--a0D9LpcKV8-unsplash(1x1).jpg" class="img-fluid" alt="...">
           </div>
           <div class="col-lg-6">
             <div class="card-body pt-2 pt-lg-10 ps-lg-6">
@@ -178,14 +179,17 @@
   <!-- 直播回顧 -->
   <section class="live">
     <div class="container">
-      <h2 class="fw-bold">直播回顧</h2>
+      <h2 class="fw-bold pt-13">直播回顧</h2>
     </div>
     <div class="container">
       <div class="live-bg">
-        <div class="live-bg-primary">
-          <h3 class="text-white">開幕對談|藝術展演巡禮</h3>
-          <img src="../../assets/images/people.png" alt="">
-          <h5 class="text-white">臺北現代聯合總監｜Ken Hsu</h5>
+        <div class="live-bg-primary p-6 pt-10">
+          <div class="d-flex">
+            <h3 class="text-white fw-bold border-end pe-3">開幕對談</h3>
+            <h3 class="text-white fw-bold ps-3">藝術展演巡禮</h3>
+          </div>
+          <img class="pt-6" src="../../assets/images/people.png" alt="藝術總監照片">
+          <h5 class="text-white pt-3">臺北現代聯合總監｜Ken Hsu</h5>
           <p class="text-white">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
           <a href="#" class="btn btn-secondary">點此觀看</a>
         </div>
