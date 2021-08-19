@@ -14744,6 +14744,48 @@ a {
   right: 0;
 }
 
+.nav-list .shopping-bag-number {
+  width: 22px;
+  height: 18px;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.modal.right .modal-dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  -webkit-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.right .modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal.right .modal-header {
+  border-bottom: none;
+}
+
+.modal.right .modal-body .card {
+  max-width: 540px;
+}
+
+.modal.right .modal-footer {
+  border-top: none;
+}
+
 .subscribe {
   background: url("../../assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg") center;
   /*  圖片水平垂直置中  */
@@ -14816,10 +14858,6 @@ a {
   height: 480px;
 }
 
-.header h1, .header .h1 {
-  font-size: 2rem;
-}
-
 .header .btn {
   display: block;
   width: 45%;
@@ -14842,14 +14880,14 @@ a {
   }
 }
 
-.header .nav-scroller {
+.nav-scroller {
   height: 2.75rem;
   /* 隱藏下方捲軸 */
   overflow-y: hidden;
-  border-bottom: 1px solid #707070;
+  border: 1px solid #707070;
 }
 
-.header .nav-scroller .nav {
+.nav-scroller .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
