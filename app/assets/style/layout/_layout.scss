@@ -1,44 +1,53 @@
 // nav
 .nav-list {    
     right: 0;
-  }
-  
-// footer
-.subscribe {
-    background: url("../../assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg") center; /*  圖片水平垂直置中  */
-    background-size: cover; /*  背景自適應延伸屬性  */
-    height: 400px;
-    // &-content {
-    //     position: absolute;
-    //     bottom: 36px;
-    //     width: 100%;
-    // }
-    &-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 400px;        
-    }
-    &-form {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        width: 100%;
-                            
-        @include large(){
-            width: 350px;
-        }
-    }
-    &-submit {
-        width: 60%;
-        border: 1px solid $light;
-    }
-    &-btn {        
-        width: 40%;
-        border: 1px solid $secondary;
+    .shopping-list-number {
+        width: 22px;
+        height: 18px;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        right: 5px;
     }
 }
 
+// Modal
+.modal.right {
+    .modal-dialog {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        transform: translate3d(0%, 0, 0);
+    }
+    .modal-content {
+        height: 100%;
+        overflow-y: auto;
+    }
+    .modal {
+        &-content {
+          border-radius: 0;
+          border: none;
+        }
+        &-header {
+          border-bottom: none;
+        }
+        &-body{
+          .card{
+            max-width: 540px;
+          }
+        }
+        &-footer {
+          border-top: none;
+        }
+    }
+}
+  
+  
+// footer
+// footer-nav
 .footer {
     .navbar-brand {
         font-size: $font-size-md;

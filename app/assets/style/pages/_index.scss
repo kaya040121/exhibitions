@@ -1,0 +1,108 @@
+// header
+.header {
+    background: url("../../assets/images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash (1).jpg") center; /*  圖片水平垂直置中  */
+    background-size: cover; /*  背景自適應延伸屬性  */
+    height: 480px;    
+    .btn {
+        display: block;
+        width: 45%;
+        @include medium(){
+            width: 160px;
+        }
+    }
+    .header-content {
+        height: 480px;
+        padding-bottom: 90px;
+        @include medium(){
+            padding-bottom: 0px;
+        }
+    }      
+}
+
+// nav-scroller
+.nav-scroller {
+    height: 2.75rem; /* 隱藏下方捲軸 */
+    overflow-y: hidden; 
+    border: 1px solid #707070;
+    .nav {
+        display: flex;        
+        flex-wrap: nowrap;
+        /* 隱藏下方捲軸 */
+        overflow-x: auto;
+        white-space: nowrap;        
+    }
+}    
+
+// main
+// 熱門特展 special-exhibition
+.special-exhibition {
+    .card {
+        font-weight: 500;
+    }
+}
+
+// 直播回顧 live
+.live {
+    &-bg {
+        background: url("../../assets/images/people2.png") center; /*  圖片水平垂直置中  */
+        background-size: cover; /*  背景自適應延伸屬性  */
+        height: 482px;        
+    }
+    .btn {
+        width: 140px;
+    }
+    &-bg-primary {        
+        background-color: #190014CC;
+        height: 100%;
+        @include large(){
+            width: 40%;
+        }
+    }
+}
+
+// 猜你也喜歡 / Swiper
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+  
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+// subscribe 訂閱我們
+.subscribe {
+    background: url("../../assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg") center; /*  圖片水平垂直置中  */
+    background-size: cover; /*  背景自適應延伸屬性  */
+    height: 400px;    
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 400px;        
+    }
+    &-form {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;                            
+        @include large(){
+            width: 350px;
+        }
+    }
+    &-submit {
+        width: 60%;
+        border: 1px solid $light;
+    }
+    &-btn {        
+        width: 40%;
+        border: 1px solid $secondary;
+    }
+}

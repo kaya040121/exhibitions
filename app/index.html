@@ -1,10 +1,253 @@
 ---
-title: Boostrap Index
+title: 台北當代藝術展
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
+<!-- header -->
+<!-- 台北當代藝術展 -->
+<header class="header">
+  <div class="container">
+    <div class="row header-content align-items-end align-items-md-center">
+      <div class="offset-md-1">
+        <h1 class="text-white fw-bold fs-2">台北當代藝術展</h1>
+        <h5 class="text-white fw-bold">01 JUN - 31 OCT</h5>
+        <div class="d-flex justify-content-center justify-content-md-start">
+          <a class="buy-btn btn btn-secondary m-2" href="#">購買票券</a>
+          <a class="more-btn btn btn-outline-white m-2" href="#">詳細資訊</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- nav-scroller -->
+<div class="nav-scroller bg-white mb-5 mb-lg-13">
+  <nav class="container nav justify-content-md-center" aria-label="Secondary navigation">
+    <a class="nav-link active py-3" aria-current="page" href="#">音樂</a>
+    <a class="nav-link py-3" href="#">戲劇</a>
+    <a class="nav-link py-3" href="#">設計</a>
+    <a class="nav-link py-3" href="#">藝術</a>
+    <a class="nav-link py-3" href="#">美食</a>
+    <a class="nav-link py-3" href="#">旅遊</a>
+    <a class="nav-link py-3" href="#">電影</a>
+    <a class="nav-link py-3" href="#">親子</a>
+    <a class="nav-link py-3" href="#">期間限定</a>
+  </nav>
+</div>
+
 <div class="main">
-  <div class="container"></div>
+  <!-- 熱門特展 -->
+  <section class="special-exhibition">
+    <!-- 不知為何會與 nav-scroller 區塊重疊，因此往上推 mt-13 -->
+    <div class="container">
+      <h2 class="fw-bold">熱門特展</h2>
+    </div>
+    <div class="container">
+      <!-- CARD - 2020 台味設計展 -->
+      <div class="card bg-light border-0 mb-3">
+        <div class="row g-0">
+          <div class="col-lg-4">
+            <img src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash(1x1).jpg" class="img-fluid" alt="2020 台味設計展照片">
+          </div>
+          <div class="col-lg-6">
+            <div class="card-body pt-2 pt-lg-10 ps-lg-6">
+              <h5 class="card-title fw-bold d-none d-lg-block">2020 台味設計展</h5>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title fw-bold d-block d-lg-none">2020 台味設計展
+                  <a class="d-inline-block" href="#"><img class="ms-2" src="assets/images/facebook-24px.svg"
+                      alt="icon-facebook"></a>
+                </h5>
+                <h6 class="d-block d-lg-none">01 JUN — 31 OCT</h6>
+              </div>
+              <p class="price">$350</p>
+              <p class="card-text">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary me-1">購買票券</a>
+                <a href="#" class="btn btn-outline-primary">收藏展覽</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block pt-10 ps-6">
+            <h6>01<br> JUN<br> |<br> 31<br> OCT</h6>
+            <a href="#"><img class="ms-2" src="assets/images/facebook-24px.svg" alt="icon-facebook"></a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD - No.22 線上設計展 -->
+      <div class="card bg-light border-0 mb-3">
+        <div class="row g-0">
+          <div class="col-lg-4">
+            <img src="assets/images/michel-catalisano--a0D9LpcKV8-unsplash(1x1).jpg" class="img-fluid"
+              alt="No.22 線上設計展照片">
+          </div>
+          <div class="col-lg-6">
+            <div class="card-body pt-2 pt-lg-10 ps-lg-6">
+              <h5 class="card-title fw-bold d-none d-lg-block">No.22 線上設計展</h5>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title fw-bold d-block d-lg-none">No.22 線上設計展
+                  <a class="d-inline-block" href="#"><img class="ms-2" src="assets/images/facebook-24px.svg"
+                      alt="icon-facebook"></a>
+                </h5>
+                <h6 class="d-block d-lg-none">01 JUN — 31 OCT</h6>
+              </div>
+              <p class="price">$350</p>
+              <p class="card-text">
+                這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary me-1">購買票券</a>
+                <a href="#" class="btn btn-outline-primary">收藏展覽</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block pt-10 ps-6">
+            <h6>01<br> JUN<br> |<br> 31<br> OCT</h6>
+            <a href="#"><img class="ms-2" src="assets/images/facebook-24px.svg" alt="icon-facebook"></a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD - 高雄設計節 -->
+      <div class="card bg-light border-0 mb-3">
+        <div class="row g-0">
+          <div class="col-lg-4">
+            <img src="assets/images/moralis-tsai-8xsktFRw28I-unsplash(1x1).jpg" class="img-fluid" alt="高雄設計節照片">
+          </div>
+          <div class="col-lg-6">
+            <div class="card-body pt-2 pt-lg-10 ps-lg-6">
+              <h5 class="card-title fw-bold d-none d-lg-block">高雄設計節</h5>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title fw-bold d-block d-lg-none">高雄設計節
+                  <a class="d-inline-block" href="#"><img class="ms-2" src="assets/images/facebook-24px.svg"
+                      alt="icon-facebook"></a>
+                </h5>
+                <h6 class="d-block d-lg-none">01 JUN — 31 OCT</h6>
+              </div>
+              <p class="price">$350</p>
+              <p class="card-text">
+                設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？</p>
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary me-1">購買票券</a>
+                <a href="#" class="btn btn-outline-primary">收藏展覽</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block pt-10 ps-6">
+            <h6>01<br> JUN<br> |<br> 31<br> OCT</h6>
+            <a href="#"><img class="ms-2" src="assets/images/facebook-24px.svg" alt="icon-facebook"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 直播回顧 -->
+  <section class="live">
+    <div class="container">
+      <h2 class="fw-bold pt-13">直播回顧</h2>
+    </div>
+    <div class="container">
+      <div class="live-bg">
+        <div class="live-bg-primary p-6 pt-10">
+          <div class="d-flex">
+            <h3 class="text-white fw-bold border-end pe-3">開幕對談</h3>
+            <h3 class="text-white fw-bold ps-3">藝術展演巡禮</h3>
+          </div>
+          <img class="pt-6" src="assets/images/people.png" alt="藝術總監照片">
+          <h5 class="text-white pt-3">臺北現代聯合總監｜Ken Hsu</h5>
+          <p class="text-white">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+          <a href="#" class="btn btn-secondary">點此觀看</a>
+        </div>
+      </div>
+      <!-- <div class="row art-interview col-12 col-lg-5"></div> -->
+    </div>
+  </section>
+
+  <!-- 猜你也喜歡 / Swiper -->
+  <section class="read-around">
+    <div class="container">
+      <div class="row p-6 p-lg-13">
+        <h2 class="fw-bold">猜你也喜歡...</h2>
+        <div class="col-12 col-md-11 offset-md-1">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card border-0">
+                  <img src="assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash(1x1).jpg" class="card-img-top mb-1"
+                    alt="設計展照片">
+                  <div class="card-body p-0">
+                    <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                    <p class="card-text text-black">$350</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0">
+                  <img src="assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash(1x1).jpg" class="card-img-top mb-1"
+                    alt="設計展照片">
+                  <div class="card-body p-0">
+                    <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                    <p class="card-text text-black">$350</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0">
+                  <img src="assets/images/museums-victoria-kiDwVL_5ZBY-unsplash(1x1).jpg" class="card-img-top mb-1"
+                    alt="設計展照片">
+                  <div class="card-body p-0">
+                    <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                    <p class="card-text text-black">$350</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0">
+                  <img src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash(1x1).jpg" class="card-img-top mb-1"
+                    alt="設計展照片">
+                  <div class="card-body p-0">
+                    <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                    <p class="card-text text-black">$350</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0">
+                  <img src="assets/images/michel-catalisano--a0D9LpcKV8-unsplash(1x1).jpg" class="card-img-top mb-1"
+                    alt="設計展照片">
+                  <div class="card-body p-0">
+                    <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                    <p class="card-text text-black">$350</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0">
+                  <img src="assets/images/moralis-tsai-8xsktFRw28I-unsplash(1x1).jpg" class="card-img-top mb-1"
+                    alt="設計展照片">
+                  <div class="card-body p-0">
+                    <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                    <p class="card-text text-black">$350</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- subscribe 訂閱我們 -->
+<div class="subscribe">
+  <div class="container">
+    <div class="subscribe-content pb-9">
+      <h2 class="fw-bold text-white">想收到最新消息嗎？<br>快訂閱我們！</h2>
+      <form class="subscribe-form">
+        <input class="subscribe-submit rounded-start p-3" type="email" placeholder="輸入您的電子信箱" aria-label="email">
+        <a class="subscribe-btn btn btn-secondary rounded-end p-3" href="#">訂閱</a>
+      </form>
+    </div>
+  </div>
 </div>
